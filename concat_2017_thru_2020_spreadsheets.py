@@ -124,13 +124,13 @@ def combine_files(files_list, month_start, month_end, run_shop_code_transition=F
         df_parsing.write_df()
 
 
-#df_transition = load_transition_df(root_dir / "Product_descriptions_201707_RowanEdited.xlsx")
+df_transition = load_transition_df(root_dir / "Product_descriptions_201707_RowanEdited.xlsx")
 
-#combine_files(files_2017_half_1, '201701', '201706', run_shop_code_transition=True)
-#combine_files(files_2017_half_2, '201707', '201712')
-#combine_files(files_2018_half_1, '201801', '201806')
-#combine_files(files_2018_half_2, '201807', '201812')
-#combine_files(files_2019_half_1, '201901', '201906')
-#combine_files(files_2019_half_2, '201907', '201912')
+combine_files(files_2017_half_1, '201701', '201706', run_shop_code_transition=True)
+combine_files(files_2017_half_2, '201707', '201712')
+combine_files(files_2018_half_1, '201801', '201806')
+combine_files(files_2018_half_2, '201807', '201812')
+combine_files(files_2019_half_1, '201901', '201906')
+combine_files(files_2019_half_2, '201907', '201912')
 combine_files(files_2020_half_1, '202001', '202006')
-#combine_files(files_2020_half_2, '202007', '202012')
+combine_files(files_2020_half_2, '202007', '202012')
